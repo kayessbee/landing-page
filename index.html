@@ -4,75 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href ="styles.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100&display=swap');</style>   
     <title>Landing Page</title>
 </head>
 <body>
 
 <header>
     <!--nav bar-->
-        <div>                               <!--for NAVBAR FLEXBOX-->
-            <p>coding cheshire</p>              <!--HEADER LOGO-->
-            <ul>                                                    <!--header links-->
-                <a href=""><img src=""><li>github</li></a>                     <!--embed links later-->
-                <a href=""><img src=""><li>twitter</li></a>                    <!--will try to use icons for this instead of text only-->
-                <a href=""><img src=""><li>roadmap</li></a>                    <!--my TOP page maybe?, will use roadmap on resources below instead-->
+        <nav>                               <!--for NAVBAR FLEXBOX-->
+            <p class="logo">cheshire cat</p>
+            <ul class="header-links">         <!--header links--> <!--will try to use icons for this instead of text only-->
+                <li class="links"><a href="https://github.com/kayessbee"><img src="">github</a></li> 
+                <li class="links"><a href="https://twitter.com/codingcheshire"><img src="">twitter</a></li>     
+                <li class="links"><a href="https://roadmap.sh/full-stack"><img src="">roadmap</a></li>  
             </ul>
-        </div>
+        </nav>
 </header>
     <!--MAIN TEXT plus IMAGE-->
-        <div>                               <!--for flexbox with image on right-->
-            <div>                           <!--for flexbox (?) with button on bottom-->
-                <h1>
+        <div class="main-panel">             <!--for flexbox with image on right-->
+            <div class="main-texts">                           <!--for flexbox (?) with button on bottom-->
+                <h1 class="hero-main">
                     My Coding Journey
                 </h1>
-                <p>
+                <p class="hero-secondary">
                     Just some random links and resources I used during my coding journey
                 </p>
-                <input type="button">           <!--button for signup, maybe change to send email to:-->
+                <input type="button" value="Learn More">            <!--button for signup, maybe change to send email to:-->
             </div>
                 <a href="https://unsplash.com/photos/OqtafYT5kTw">                
-                <img src="images/main-image.jpg" alt="coding journey" width="300vw"></a>
+                <img src="images/main-image.jpg" alt="coding journey" class="main-image"></a>
         </div>
+    <!--Resources Tiles below-->
+<h2 class="information center">Useful Resources</h2>
+    <div class="resources">                                       <!-- ROW FLEXBOX for tiles-->
+        <div class="tiles">                                       <!--flexbox for individual tiles-->
+            <a href="https://www.theodinproject.com/"><img src="images/top-logo.png"></a>
+            <p>The Odin Project</p>
+        </div>
+        <div class="tiles">
+            <a href="https://www.theodinproject.com/"><img src="images/top-logo.png"></a>           <!--placeholder image and link-->
+            <p>freecodecamp</p>
+        </div>
+        <div class="tiles"> 
+            <a href="https://www.theodinproject.com/"><img src="images/top-logo.png"></a>           <!--placeholder image and link-->
+            <p>scrimba</p>
+        </div>
+        <div class="tiles">
+            <a href="https://www.theodinproject.com/"><img src="images/top-logo.png"></a>           <!--placeholder image and link-->
+            <p>Harvard's CS50</p>
+        </div>
+    </div>
 
-<h2>Useful Resources</h2>
-<div>                                       <!-- ROW FLEXBOX for tiles-->
-    <div>                                       <!--flexbox for individual tiles-->
-        <a href=""><img src=""></a>
-        <p>The Odin Project</p>
-    </div>
-    <div>
-        <a href=""><img src=""></a>
-        <p>freecodecamp</p>
-    </div>
-    <div> 
-        <a href=""><img src=""></a>
-        <p>scrimba</p>
-    </div>
-    <div>
-        <a href=""><img src=""></a>
-        <p>Harvard's CS50</p>
-    </div>
+<div class="quote">
+    <h1>                                            <!--flexbox to center, make it more responsive via flex wrap???-->
+        "We accepted education as the means to rise above the limitations that a prejudiced society endeavored to place upon us."
+    </h1>
+    <p> - Evelyn Boyd Granville </p>
 </div>
 
-<h1>                                            <!--flexbox to center, make it more responsive via flex wrap-->
-    LARGE QUOTE NEEDS TO BE ITALIZED, centered and with padding
-</h1>
-<h6> - anonymous right</h6>
-
-<div>                                       <!--flexbox for button on the right-->
-    <div>
-        <h3>Medium Text
-        </h3> 
-        <h4>Small Text
-        </h4>
+<div class="email-block">                                       <!--flexbox for button on the right-->
+    <div class="email-text">
+        <p>Interested to learn more?
+        </p> 
+        <p>Send me an email!
+        </p>
     </div>  
-        <input type="button">               <!--button for signup on the right-->
+        <input type="button" value="email me @">               <!--button for signup on the right-->
 
 </div>
-
 <footer>
-    <h4>Copyright The Odin Project 2023</h4>        <!--flexbox to center. header and footer position fixed?-->
+    <p>Copyright The Odin Project 2023</p>        
 </footer>
-   
+    
 </body>
-</html>
